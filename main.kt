@@ -73,7 +73,7 @@ class XcfaCegarSpawnProcess {
       "main.CegarCheckerKt"
     ).inheritIO().start().waitFor()
     
-    val result = Db.result ?: Result(false, "No result from spawned process")
+    val result = Db.result ?: Result(false, "Result from spawned process")
     Logger.debug("XcfaCegarSpawnProcess: Result = %s", result.output)
     return result
   }
