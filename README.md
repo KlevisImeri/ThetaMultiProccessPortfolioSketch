@@ -18,7 +18,7 @@ FAIL_CEGAR=true kotlin -classpath "out:kotlinx-coroutines-core.jar" main.MainKt 
 
 ### Full script
 ```
-rm -f out || true kotlinc -classpath kotlinx-coroutines-core.jar -d out portfolio.kt main.kt logger.kt && kotlin -classpath "out:kotlinx-coroutines-core.jar" main.MainKt input.xcfa && FAIL_CEGAR=true kotlin -classpath "out:kotlinx-coroutines-core.jar" main.MainKt input.xcfa
+rm -f out || true && kotlinc -classpath kotlinx-coroutines-core.jar -d out portfolio.kt main.kt logger.kt && kotlin -classpath "out:kotlinx-coroutines-core.jar" main.MainKt input.xcfa && FAIL_CEGAR=true kotlin -classpath "out:kotlinx-coroutines-core.jar" main.MainKt input.xcfa
 
 ```
 
